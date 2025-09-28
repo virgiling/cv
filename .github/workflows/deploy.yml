@@ -34,13 +34,16 @@ jobs:
       - name: Setup Typst
         uses: typst-community/setup-typst@v4
       - name: Compile PDF
-        run: typst compile template.typ cv.pdf
+        run: |
+          typst compile template.typ cv.pdf
+          mkdir -p public
+          mv cv.pdf public/cv.pdf
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "cv.pdf"
+          path: "./public"
   deploy:
     needs: build
     environment:
