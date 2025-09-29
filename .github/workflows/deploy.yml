@@ -36,13 +36,14 @@ jobs:
       - name: Compile PDF
         run: |
           typst compile template.typ cv.pdf --font-path ./fonts
+          mkdir -p ./public
+          mv cv.pdf ./public/cv.pdf
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: cv
-          path: cv.pdf
+          path: public
   deploy:
     needs: build
     environment:
