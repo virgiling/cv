@@ -35,7 +35,7 @@ jobs:
         uses: typst-community/setup-typst@v4
       - name: Compile PDF
         run: |
-          typst compile template.typ cv.pdf
+          typst compile template.typ cv.pdf --font-path ./fonts
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
