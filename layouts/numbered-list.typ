@@ -1,10 +1,12 @@
 #let layout-numbered-list(data, isbreakable: true) = {
   // Set width for the number column
   let number_width = 2em
+  v(4pt)
 
   block(width: 100%, breakable: isbreakable)[
     // Check if data is an array (direct list of citations)
     #if type(data) == array {
+      let entries_num = data.len()
       for (index, entry) in data.enumerate() {
         // Create a grid with two columns
         grid(
@@ -12,7 +14,7 @@
           gutter: 1em,
 
           // Right-aligned number in the first column
-          align(right)[*[#(index + 1)]*],
+          align(right)[*[#(entries_num - index)]*],
 
           // Citation text with markup in the second column
           grid(
@@ -25,9 +27,9 @@
             ),
             if "submit-to" in entry and entry.submit-to != "" {
               if entry.submit-type == "journal" {
-                [*[J] #entry.submit-to*, #entry.submit-details]
+                [_*[J] #entry.submit-to*, #entry.submit-details _]
               } else if entry.submit-type == "conference" {
-                [*[J] #entry.submit-to*, #entry.submit-details]
+                [_*[C] #entry.submit-to*, #entry.submit-details _]
               } else {
                 ""
               }

@@ -2,8 +2,8 @@
 settings:
   font-heading: "Libertinus Serif"
   font-body: "Libertinus Serif"
-  fontsize: 11.5pt
-  spacing-section: 12pt
+  fontsize: 12pt
+  spacing-section: 10pt
   spacing-entry: 0.2em
   spacing-element: 5pt
   spacing-line: 5pt
@@ -21,7 +21,9 @@ personal:
     - M.S. Candidate in Computer Science
     - SAT
   location:
-    city: Northeast Normal University
+    university: Northeast Normal University
+    city: Changchun
+    state: Jilin
     country: China
   contact:
     email: virgiling7@gmail.com
@@ -40,16 +42,22 @@ sections:
 
   - key: statement
     layout: prose
-    title: Personal Statement
+    title: Research Interests
     show: true
-    entries:
-      - ""
+    entries: |
+      My research interests basically lie in the intersection of computer science and artificial intelligence, with a particular focus on:
+
+        - Cardinality Constraints in Satisfiability Solving
+        - Parallel Algorithm in Satisfiability Solving
+        - Combinatorial Optimization (e.g. Graph Theory)
+
+      Recently, I also read some papers about LLM which are combining LLM with automated reasoning to solve complex problems.
 
   - key: education
     layout: timeline
     primary-element: ["title", "institution"]
     secondary-element: ["advisors"]
-    tertiary-element: ["location"]
+    tertiary-element: ["Average Score", "Thesis"]
     title: Education
     show: true
     entries:
@@ -59,61 +67,52 @@ sections:
         advisors:
           - "Professor Minghao Yin"
           - "Associate Professor Shuli Hu"
+        Average Score: 85
+
         start-date: 2024
-        end-date: 2026
+        excepted-date: 2026
       - institution: Northeast Normal University
         location: Changchun, China
         title: B.S. in Computer Science
         advisors:
           - "Professor Minghao Yin"
           - "Associate Professor Shuli Hu"
+        Average Score: 88
+        Thesis: 9.5/10
         start-date: 2020
         end-date: 2024
-
-  - key: experience
-    layout: timeline
-    primary-element: ["institution"]
-    secondary-element: ["title"]
-    tertiary-element: ["description"]
-    title: Professional Experience
-    show: false
-    entries:
-      - institution: TechCorp AI
-        title: Senior Data Scientist
-        start-date: 01/2020
-        end-date: Present
-        description: |
-          Lead a team of five data scientists developing computer vision algorithms for autonomous systems. Developed and deployed machine learning models that improved object detection accuracy by 35% while reducing false positives by 40%. Collaborated with cross-functional teams to integrate AI solutions into production systems.
-      - institution: DataViz Solutions
-        title: Machine Learning Engineer
-        start-date: 06/2019
-        end-date: 12/2019
-        description: |
-          Designed and implemented natural language processing systems for customer sentiment analysis. Created a scalable pipeline for processing over 1 million text documents daily. Reduced model training time by 60% through optimization techniques.
-      - institution: Stanford AI Lab
-        title: Research Assistant
-        start-date: 09/2015
-        end-date: 05/2019
-        description: |
-          Conducted research on reinforcement learning algorithms for robotic applications. Published three papers in top-tier ML conferences (NeurIPS, ICML). Developed open-source libraries for deep reinforcement learning research.
 
   - key: publications
     layout: numbered-list
     title: Selected Papers
     show: true
     entries:
+      - title: "A Large Neighborhood Search with Deep Optimization for the Weighted Total Domination Problem in Massive Graphs"
+        authors: Shuli Hu, Wen Wen, *Dian Ling,* Jiaqi Li, Ziqing Liao, Ruizhi Li, Minghao Yin
+        submit-to: ""
+        submit-type: journal
+        submit-details: ""
       - title: "A Multi-start Algorithm with Iterated Decremental Local Search for Minimum Capacitated Dominating Set Problem in Large Graphs"
         authors: Shuli Hu, Shuang Zhou, *Dian Ling*, Jiaqi Li, Ruizhi Li, Yupeng Zhou, Minghao Yin
         submit-to: Memetic Computing
         submit-type: journal
         submit-details: "Volume 17, Issue 3, Pages 36"
 
-      - title: "A Large Neighborhood Search with Deep Optimization for the Weighted Total Domination Problem in Massive Graphs"
-        authors: Shuli Hu, Wen Wen, *Dian Ling,* Jiaqi Li, Ziqing Liao, Ruizhi Li, Minghao Yin
-        submit-to: ""
-        submit-type: journal
-        submit-details: ""
-
+  - key: experience
+    layout: timeline
+    primary-element: ["institution"]
+    secondary-element: ["title"]
+    tertiary-element: ["description"]
+    title: Research Experience
+    show: true
+    entries:
+      - institution: Institute of Computing Technology, Chinese Academy of Sciences
+        title: Visiting Student
+        start-date: 06/2023
+        end-date: 08/2023
+        description: |
+          - Investigated the application and importance of sparse matrices in AI compilers
+          - Assisted in mapping loop-level IR to Triton kernels.
   - key: awards
     layout: timeline
     primary-element: ["title"]
@@ -125,31 +124,23 @@ sections:
       - institution: Northeast Normal University
         title: Outstanding Graduate Student
         start-date: 2024
-      - institution: Consortium for Mathematics and its Applications
-        title: Meritorious Winner
-        start-date: 2022
-      # - institution: Contemporary Undergraduate Mathematical Contest in Modeling
-      #   title: Silver Award
-      #   start-date: 2022
-      #   description: |
-      #     Jilin Provincial Collegiate Contest
       - institution: Northeast Normal University
         title: Presidential Scholarship
         start-date: 2021/2022/2024
         description: |
           Awarded to top 5% of students university-wide
-      # - institution: The Chinese Mathematical Society
-      #   title: First Prize (non-math majors)
-      #   start-date: 2021
-      #   description: |
-      #     The 13th Jilin Provincial Collegiate Contest
-      # - institution: China Collegiate Programming Contest
-      #   title: Silver Medal
-      #   start-date: 2021
-      #   description: |
-      #     The 15th Jilin Provincial Collegiate Programming Contest
+      - institution: Consortium for Mathematics and its Applications
+        title: Meritorious Winner
+        start-date: 2022
       - institution: China Collegiate Programming Contest
         title: Bronze Medal
         start-date: 2021
         description: |
           The 15th Northeast Collegiate Programming Contest
+
+  - key: skills
+    layout: prose
+    title: Skills & Technologies
+    show: false
+    entries: |
+      - Programming Languages: Rust, C/C++

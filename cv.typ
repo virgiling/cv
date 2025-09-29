@@ -88,6 +88,7 @@
       layout-header(info.personal, isbreakable: isbreakable)
     } else {
       block[
+        #show smallcaps: set text(font: "Sedan SC")
         #smallcaps[== #section-title]
 
         // Use the appropriate layout function based on layout
