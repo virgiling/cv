@@ -28,7 +28,7 @@ personal:
   contact:
     email: virgiling7@gmail.com
     phone: "(+86) 18075428239"
-    website: https://virgiling.wiki
+    website: https://cv.virgiling.wiki
   profiles:
     - network: GitHub
       username: virgiling
@@ -45,10 +45,10 @@ sections:
     title: Research Interests
     show: true
     entries: |
-      My research interests basically lie in the intersection of computer science and artificial intelligence, with a particular focus on:
+      My research interest lies in (Parallel) Automated Reasoning, SAT basically and Heuristic Search, with a particular focus on:
 
-        - Cardinality Constraints in Satisfiability Solving
         - Parallel Algorithm in Satisfiability Solving
+        - Cardinality Constraints in Satisfiability Solving
         - Combinatorial Optimization (e.g. Graph Theory)
 
       Recently, I also read some papers about LLM which are combining LLM with automated reasoning to solve complex problems.
@@ -87,11 +87,16 @@ sections:
     title: Selected Papers
     show: true
     entries:
-      - title: "A Large Neighborhood Search with Deep Optimization for the Weighted Total Domination Problem in Massive Graphs"
-        authors: Shuli Hu, Wen Wen, *Dian Ling,* Jiaqi Li, Ziqing Liao, Ruizhi Li, Minghao Yin
+      - title: "An Improved ILP Model and Multi-start Iterated Local Search for the Power Dominating Set"
+        authors: Shuli Hu, *Dian Ling*, Wen Wen, Jiaqi Li, Na Luo, Minghao Yin
         submit-to: ""
         submit-type: journal
         submit-details: ""
+      # - title: "A Large Neighborhood Search with Deep Optimization for the Weighted Total Domination Problem in Massive Graphs"
+      #   authors: Shuli Hu, Wen Wen, *Dian Ling,* Jiaqi Li, Ziqing Liao, Ruizhi Li, Minghao Yin
+      #   submit-to: ""
+      #   submit-type: journal
+      #   submit-details: ""
       - title: "A Multi-start Algorithm with Iterated Decremental Local Search for Minimum Capacitated Dominating Set Problem in Large Graphs"
         authors: Shuli Hu, Shuang Zhou, *Dian Ling*, Jiaqi Li, Ruizhi Li, Yupeng Zhou, Minghao Yin
         submit-to: Memetic Computing
@@ -106,6 +111,12 @@ sections:
     title: Research Experience
     show: true
     entries:
+      - institution: ZGC Lab
+        title: Research Intern
+        start-date: 05/2024
+        end-date: 08/2024
+        description:
+
       - institution: Institute of Computing Technology, Chinese Academy of Sciences
         title: Visiting Student
         start-date: 06/2023

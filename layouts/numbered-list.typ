@@ -1,8 +1,8 @@
 #let layout-numbered-list(data, isbreakable: true) = {
   // Set width for the number column
   let number_width = 2em
-  v(4pt)
 
+  set block(below: .8em)
   block(width: 100%, breakable: isbreakable)[
     // Check if data is an array (direct list of citations)
     #if type(data) == array {
@@ -17,9 +17,10 @@
           align(right)[*[#(entries_num - index)]*],
 
           // Citation text with markup in the second column
+
           grid(
             rows: entry.len(),
-            gutter: 1em,
+            gutter: .65em,
             [*#entry.title*],
             text(
               eval(entry.authors, mode: "markup"),
@@ -38,11 +39,6 @@
             },
           ),
         )
-
-        // Add space between entries
-        if index < data.len() - 1 {
-          v(0.05em)
-        }
       }
     } else {
       [No entries found]
