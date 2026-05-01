@@ -28,9 +28,9 @@
             ),
             if "submit-to" in entry and entry.submit-to != "" {
               if entry.submit-type == "journal" {
-                [_*[J] #entry.submit-to*, #entry.submit-details _]
+                [_*[J] #entry.submit-to*, #entry.submit-details _ (*#entry.short-name*)]
               } else if entry.submit-type == "conference" {
-                [_*[C] #entry.submit-to*, #entry.submit-details _]
+                [_*[C]* #entry.submit-to _ (*#entry.short-name*)]
               } else {
                 ""
               }
