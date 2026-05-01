@@ -90,9 +90,10 @@ sections:
       - title: "Towards Cardinality-Aware Local Search for SAT with Cardinality
           Constraints"
         authors: Shuli Hu, *Dian Ling*, Jiaqi Li, Minghao Yin
-        submit-to: "IJCAI 2026"
+        submit-to: "35th International Joint Conference on Artificial Intelligence
+          (IJCAI 2026)"
         submit-type: conference
-        submit-details: "Accepted"
+        submit-details: ""
       # - title: "An Improved ILP Model and Multi-start Iterated Local Search for the Power Dominating Set"
       #   authors: Shuli Hu, *Dian Ling*, Wen Wen, Jiaqi Li, Na Luo, Minghao Yin
       #   submit-to: ""
@@ -102,14 +103,14 @@ sections:
           Total Domination Problem in Massive Graphs"
         authors: Shuli Hu, Wen Wen, *Dian Ling*, Jiaqi Li, Ziqing Liao, Ruizhi Li,
           Minghao Yin
-        submit-to: ""
+        submit-to: "Knowledge-Based Systems (KBS)"
         submit-type: journal
-        submit-details: ""
+        submit-details: "Under Review"
       - title: "A Multi-start Algorithm with Iterated Decremental Local Search for
           Minimum Capacitated Dominating Set Problem in Large Graphs"
         authors: Shuli Hu, Shuang Zhou, *Dian Ling*, Jiaqi Li, Ruizhi Li, Yupeng Zhou,
           Minghao Yin
-        submit-to: Memetic Computing
+        submit-to: "Memetic Computing (Memet Comput)"
         submit-type: journal
         submit-details: "Volume 17, Issue 3, Pages 36"
 
