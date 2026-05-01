@@ -38,7 +38,7 @@ sections:
   - key: personal
     layout: header
     show: true
-    include: ["location", "contact"]
+    include: [ "location", "contact" ]
 
   - key: statement
     layout: prose
@@ -55,9 +55,9 @@ sections:
 
   - key: education
     layout: timeline
-    primary-element: ["title", "institution"]
-    secondary-element: ["advisors"]
-    tertiary-element: ["Average Score", "Thesis"]
+    primary-element: [ "title", "institution" ]
+    secondary-element: [ "advisors" ]
+    tertiary-element: [ "Average Score", "Thesis" ]
     title: Education
     show: true
     entries:
@@ -87,27 +87,37 @@ sections:
     title: Selected Papers
     show: true
     entries:
-      - title: "An Improved ILP Model and Multi-start Iterated Local Search for the Power Dominating Set"
-        authors: Shuli Hu, *Dian Ling*, Wen Wen, Jiaqi Li, Na Luo, Minghao Yin
-        submit-to: ""
-        submit-type: journal
-        submit-details: ""
-      # - title: "A Large Neighborhood Search with Deep Optimization for the Weighted Total Domination Problem in Massive Graphs"
-      #   authors: Shuli Hu, Wen Wen, *Dian Ling,* Jiaqi Li, Ziqing Liao, Ruizhi Li, Minghao Yin
+      - title: "Towards Cardinality-Aware Local Search for SAT with Cardinality
+          Constraints"
+        authors: Shuli Hu, *Dian Ling*, Jiaqi Li, Minghao Yin
+        submit-to: "IJCAI 2026"
+        submit-type: conference
+        submit-details: "Accepted"
+      # - title: "An Improved ILP Model and Multi-start Iterated Local Search for the Power Dominating Set"
+      #   authors: Shuli Hu, *Dian Ling*, Wen Wen, Jiaqi Li, Na Luo, Minghao Yin
       #   submit-to: ""
       #   submit-type: journal
       #   submit-details: ""
-      - title: "A Multi-start Algorithm with Iterated Decremental Local Search for Minimum Capacitated Dominating Set Problem in Large Graphs"
-        authors: Shuli Hu, Shuang Zhou, *Dian Ling*, Jiaqi Li, Ruizhi Li, Yupeng Zhou, Minghao Yin
+      - title: "A Large Neighborhood Search with Deep Optimization for the Weighted
+          Total Domination Problem in Massive Graphs"
+        authors: Shuli Hu, Wen Wen, *Dian Ling*, Jiaqi Li, Ziqing Liao, Ruizhi Li,
+          Minghao Yin
+        submit-to: ""
+        submit-type: journal
+        submit-details: ""
+      - title: "A Multi-start Algorithm with Iterated Decremental Local Search for
+          Minimum Capacitated Dominating Set Problem in Large Graphs"
+        authors: Shuli Hu, Shuang Zhou, *Dian Ling*, Jiaqi Li, Ruizhi Li, Yupeng Zhou,
+          Minghao Yin
         submit-to: Memetic Computing
         submit-type: journal
         submit-details: "Volume 17, Issue 3, Pages 36"
 
   - key: experience
     layout: timeline
-    primary-element: ["institution"]
-    secondary-element: ["title"]
-    tertiary-element: ["description"]
+    primary-element: [ "institution" ]
+    secondary-element: [ "title" ]
+    tertiary-element: [ "description" ]
     title: Research Experience
     show: true
     entries:
@@ -126,9 +136,9 @@ sections:
           - Assisted in mapping loop-level IR to Triton kernels.
   - key: awards
     layout: timeline
-    primary-element: ["title"]
-    secondary-element: ["institution"]
-    tertiary-element: ["description"]
+    primary-element: [ "title" ]
+    secondary-element: [ "institution" ]
+    tertiary-element: [ "description" ]
     title: Selected Awards & Honors
     show: true
     entries:
@@ -154,4 +164,4 @@ sections:
     title: Skills & Technologies
     show: false
     entries: |
-      - Programming Languages: Rust, C/C++
+      - Programming Languages: C++ and Rust basically
