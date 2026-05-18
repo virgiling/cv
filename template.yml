@@ -38,7 +38,7 @@ sections:
   - key: personal
     layout: header
     show: true
-    include: [ "location", "contact" ]
+    include: ["location", "contact"]
 
   - key: statement
     layout: prose
@@ -55,9 +55,9 @@ sections:
 
   - key: education
     layout: timeline
-    primary-element: [ "title", "institution" ]
-    secondary-element: [ "advisors" ]
-    tertiary-element: [ "Average Score", "Thesis" ]
+    primary-element: ["title", "institution"]
+    secondary-element: ["advisors"]
+    tertiary-element: ["Average Score", "Thesis"]
     title: Education
     show: true
     entries:
@@ -69,8 +69,9 @@ sections:
           - "Associate Professor Shuli Hu"
         Average Score: 85
 
-        start-date: 2024
-        excepted-date: 2026
+        start-date: 2024.9
+        # excepted-date: 2026
+        end-date: 2026.5
       - institution: Northeast Normal University
         location: Changchun, China
         title: B.S. in Computer Science
@@ -79,17 +80,17 @@ sections:
           - "Associate Professor Shuli Hu"
         Average Score: 88
         Thesis: 9.5/10
-        start-date: 2020
-        end-date: 2024
+        start-date: 2020.9
+        end-date: 2024.5
 
   - key: publications
     layout: numbered-list
-    title: Selected Papers
+    title: Publications
     show: true
     entries:
       - title: "Towards Cardinality-Aware Local Search for SAT with Cardinality
           Constraints"
-        authors: Shuli Hu, *Dian Ling*, Jiaqi Li, Minghao Yin
+        authors: Shuli Hu, *Dian Ling*, Jiaqi Li, Minghao Yin$""^dagger$
         submit-to: "35th International Joint Conference on Artificial Intelligence"
         submit-type: conference
         short-name: "IJCAI'26"
@@ -98,18 +99,22 @@ sections:
       #   submit-to: ""
       #   submit-type: journal
       #   submit-details: ""
-      - title: "A Large Neighborhood Search with Deep Optimization for the Weighted
+      - title:
+          "A Large Neighborhood Search with Deep Optimization for the Weighted
           Total Domination Problem in Massive Graphs"
-        authors: Shuli Hu, Wen Wen, *Dian Ling*, Jiaqi Li, Ziqing Liao, Ruizhi Li,
-          Minghao Yin
+        authors:
+          Shuli Hu, Wen Wen, *Dian Ling*, Jiaqi Li, Ziqing Liao, Ruizhi Li,
+          Minghao Yin$""^dagger$
         submit-to: "Knowledge-Based Systems"
         submit-type: journal
         submit-details: "Available online, 116140"
         short-name: "KBS"
-      - title: "A Multi-start Algorithm with Iterated Decremental Local Search for
+      - title:
+          "A Multi-start Algorithm with Iterated Decremental Local Search for
           Minimum Capacitated Dominating Set Problem in Large Graphs"
-        authors: Shuli Hu, Shuang Zhou, *Dian Ling*, Jiaqi Li, Ruizhi Li, Yupeng Zhou,
-          Minghao Yin
+        authors:
+          Shuli Hu, Shuang Zhou, *Dian Ling*, Jiaqi Li, Ruizhi Li, Yupeng Zhou,
+          Minghao Yin$""^dagger$
         submit-to: "Memetic Computing"
         submit-type: journal
         submit-details: "Volume 17, Issue 3, Pages 36"
@@ -117,9 +122,9 @@ sections:
 
   - key: experience
     layout: timeline
-    primary-element: [ "institution" ]
-    secondary-element: [ "title" ]
-    tertiary-element: [ "description" ]
+    primary-element: ["institution"]
+    secondary-element: ["title"]
+    tertiary-element: ["description"]
     title: Research Experience
     show: true
     entries:
@@ -138,9 +143,9 @@ sections:
           - Assisted in mapping loop-level IR to Triton kernels.
   - key: awards
     layout: timeline
-    primary-element: [ "title" ]
-    secondary-element: [ "institution" ]
-    tertiary-element: [ "description" ]
+    primary-element: ["title"]
+    secondary-element: ["institution"]
+    tertiary-element: ["description"]
     title: Selected Awards & Honors
     show: true
     entries:
