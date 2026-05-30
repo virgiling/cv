@@ -5,3 +5,7 @@ __MACOSX/
 *.pdf
 
 *.lock
+
+cover-letter.typ
+
+publications.bib

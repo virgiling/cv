@@ -7,21 +7,23 @@ settings:
   spacing-entry: 0.2em
   spacing-element: 5pt
   spacing-line: 5pt
-  color-hyperlink: rgb(70, 120, 180)
+  color-hyperlink: rgb(0, 0, 0)
   page:
     paper: "a4"
     numbering: "1 / 1"
     number-align: "center"
-    margin: 2.5cm
+    margin: 2cm
 
 # Personal information
 personal:
   name: Dian Ling
   titles:
-    - M.S. Candidate in Computer Science
+    - M.S. in Computer Science
     - SAT
   location:
     university: Northeast Normal University
+    street: "2555 Jingyue Ave"
+    zip: "130117"
     city: Changchun
     state: Jilin
     country: China
@@ -38,20 +40,7 @@ sections:
   - key: personal
     layout: header
     show: true
-    include: ["location", "contact"]
-
-  - key: statement
-    layout: prose
-    title: Research Interests
-    show: true
-    entries: |
-      My research interest lies in (Parallel) Automated Reasoning, SAT basically and Heuristic Search, with a particular focus on:
-
-        - Parallel Algorithm in Satisfiability Solving
-        - Cardinality Constraints in Satisfiability Solving
-        - Combinatorial Optimization (e.g. Graph Theory)
-
-      Recently, I also read some papers about LLM which are combining LLM with automated reasoning to solve complex problems.
+    include: ["contact"]
 
   - key: education
     layout: timeline
@@ -68,10 +57,11 @@ sections:
           - "Professor Minghao Yin"
           - "Associate Professor Shuli Hu"
         Average Score: 85
+        Thesis: 8.2/10
 
-        start-date: 2024.9
+        start-date: Sept. 2024
         # excepted-date: 2026
-        end-date: 2026.5
+        end-date: May 2026
       - institution: Northeast Normal University
         location: Changchun, China
         title: B.S. in Computer Science
@@ -80,8 +70,8 @@ sections:
           - "Associate Professor Shuli Hu"
         Average Score: 88
         Thesis: 9.5/10
-        start-date: 2020.9
-        end-date: 2024.5
+        start-date: Sept. 2020
+        end-date: May 2024
 
   - key: publications
     layout: numbered-list
@@ -94,11 +84,6 @@ sections:
         submit-to: "35th International Joint Conference on Artificial Intelligence"
         submit-type: conference
         short-name: "IJCAI'26"
-      # - title: "An Improved ILP Model and Multi-start Iterated Local Search for the Power Dominating Set"
-      #   authors: Shuli Hu, *Dian Ling*, Wen Wen, Jiaqi Li, Na Luo, Minghao Yin
-      #   submit-to: ""
-      #   submit-type: journal
-      #   submit-details: ""
       - title:
           "A Large Neighborhood Search with Deep Optimization for the Weighted
           Total Domination Problem in Massive Graphs"
@@ -125,22 +110,23 @@ sections:
     primary-element: ["institution"]
     secondary-element: ["title"]
     tertiary-element: ["description"]
-    title: Research Experience
+    title: Visits and Internships
     show: true
     entries:
       - institution: ZGC Lab
         title: Research Intern
-        start-date: 05/2024
-        end-date: 08/2024
+        start-date: May 2024
+        end-date: Aug. 2024
         description:
 
       - institution: Institute of Computing Technology, Chinese Academy of Sciences
         title: Visiting Student
-        start-date: 06/2023
-        end-date: 08/2023
+        start-date: Jun. 2023
+        end-date: Aug. 2023
         description: |
           - Investigated the application and importance of sparse matrices in AI compilers
           - Assisted in mapping loop-level IR to Triton kernels.
+
   - key: awards
     layout: timeline
     primary-element: ["title"]
@@ -166,9 +152,54 @@ sections:
         description: |
           The 15th Northeast Collegiate Programming Contest
 
-  - key: skills
-    layout: prose
-    title: Skills & Technologies
-    show: false
-    entries: |
-      - Programming Languages: C++ and Rust basically
+  - key: ta
+    layout: timeline
+    primary-element: ["title"]
+    secondary-element: ["institution"]
+    tertiary-element: ["description"]
+    title: Teaching Assistantships
+    show: true
+    entries:
+      - institution: School of Information Science and Technology
+        description: Northeast Normal University
+        title: Introduction to Computer Science
+        start-date: "2025"
+
+      - institution: School of Information Science and Technology
+        description: Northeast Normal University
+        title: Algorithm & Computer Programming
+        start-date: "2022 - 2026"
+
+  - key: software
+    layout: bullet-list
+    title: Maintained Projects
+    show: true
+    entries:
+      - title: "CardSAT-LS"
+        link: "https://github.com/virgiling/CardSAT-LS"
+        status: Active
+        desc: "A Cardinality-Aware Local Search SAT Solver."
+      - title: "NENU Thesis Typst Template"
+        link: "https://github.com/virgiling/NENU-Thesis-Typst"
+        status: Active
+        desc: "A Typst template for theses at Northeast Normal University (NENU)."
+      - title: "Astro-Navfolio"
+        link: "https://github.com/dodolalorc/astro-navfolio"
+        status: Active
+        desc: "A soft and modern personal dashboard template for developers, featuring cards, widgets, navigation, and digital identity."
+      - title: "XCPC Code Printer"
+        link: "https://github.com/virgiling/CodePrint"
+        status: "Archived"
+        desc: "A simple full stack code print servive which support the cluster of printers for XCPC."
+      - title: "Harvard-CES Workshop Website"
+        link: "https://harvardces.eduhk.hk/"
+        status: "Transferred"
+        desc: "The website for the Harvard–EdUHK–Stanford Joint Symposium."
+      - title: "NENU Secondary Bachelor Application Website"
+        link: "https://tslxbm.nenu.edu.cn/login"
+        status: "Transferred"
+        desc: "The website for applying the secondary bachelor degree in Northeast Normal University."
+      - title: "NENU Admissions Official Website"
+        link: "https://gkcx.nenu.edu.cn/"
+        status: "Transferred"
+        desc: "The website for Admissions Office of Northeast Normal University, helping students get information and check admission status."

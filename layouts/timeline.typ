@@ -7,7 +7,7 @@
   isbreakable: true,
 ) = {
   // Get the global settings
-  let year-column-width = 7.5em
+  let year-column-width = 9em
 
   // Get spacing settings with defaults
   let spacing-entry = settings.at("spacing-entry", default: 0.5em)

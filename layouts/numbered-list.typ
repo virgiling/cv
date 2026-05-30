@@ -2,7 +2,6 @@
   // Set width for the number column
   let number_width = 2em
 
-  set block(below: .8em)
   block(width: 100%, breakable: isbreakable)[
     // Check if data is an array (direct list of citations)
     #if type(data) == array {
