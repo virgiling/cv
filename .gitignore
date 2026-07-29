@@ -9,3 +9,9 @@ __MACOSX/
 cover-letter.typ
 
 publications.bib
+
+*-fr*
+
+.claude
+
+CLAUDE.md

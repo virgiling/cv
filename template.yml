@@ -113,11 +113,11 @@ sections:
     title: Visits and Internships
     show: true
     entries:
-      - institution: ZGC Lab
-        title: Research Intern
-        start-date: May 2024
-        end-date: Aug. 2024
-        description:
+      # - institution: ZGC Lab
+      #   title: Research Intern
+      #   start-date: May 2024
+      #   end-date: Aug. 2024
+      #   description:
 
       - institution: Institute of Computing Technology, Chinese Academy of Sciences
         title: Visiting Student
