@@ -18,7 +18,7 @@
           // Citation text with markup in the second column
 
           grid(
-            rows: entry.len(),
+            rows: 3,
             gutter: .65em,
             [*#entry.title*],
             text(
@@ -29,7 +29,9 @@
               if entry.submit-type == "journal" {
                 [_*[J] #entry.submit-to*, #entry.submit-details _ (*#entry.short-name*)]
               } else if entry.submit-type == "conference" {
-                [_*[C]* #entry.submit-to _ (*#entry.short-name*)]
+                let details = if entry.at("submit-details", default: "") != "" { [, #entry.submit-details] }
+                let doi = if entry.at("doi", default: "") != "" { [. DOI: #link("https://doi.org/" + entry.doi)[#entry.doi]] }
+                [_*[C]* #entry.submit-to _ (*#entry.short-name*)#details#doi]
               } else {
                 ""
               }
@@ -38,6 +40,8 @@
             },
           ),
         )
+        // Keep entry spacing independent of the number of metadata fields.
+        v(1.3em)
       }
     } else {
       [No entries found]

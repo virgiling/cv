@@ -83,6 +83,8 @@ sections:
         authors: Shuli Hu, *Dian Ling*, Jiaqi Li, Minghao Yin$""^dagger$
         submit-to: "35th International Joint Conference on Artificial Intelligence"
         submit-type: conference
+        submit-details: "pp. 2256–2264, August 2026"
+        doi: "10.24963/ijcai.2026/251"
         short-name: "IJCAI'26"
       - title: "A Large Neighborhood Search with Deep Optimization for the Weighted
           Total Domination Problem in Massive Graphs"
