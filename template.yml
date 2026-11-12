@@ -84,7 +84,6 @@ sections:
         submit-to: "35th International Joint Conference on Artificial Intelligence"
         submit-type: conference
         submit-details: "pp. 2256–2264, August 2026"
-        doi: "10.24963/ijcai.2026/251"
         short-name: "IJCAI'26"
       - title: "A Large Neighborhood Search with Deep Optimization for the Weighted
           Total Domination Problem in Massive Graphs"
@@ -92,7 +91,7 @@ sections:
           Minghao Yin$""^dagger$
         submit-to: "Knowledge-Based Systems"
         submit-type: journal
-        submit-details: "Available online, 116140"
+        submit-details: "Volume 346, Pages 116140"
         short-name: "KBS"
       - title: "A Multi-start Algorithm with Iterated Decremental Local Search for
           Minimum Capacitated Dominating Set Problem in Large Graphs"

@@ -30,8 +30,7 @@
                 [_*[J] #entry.submit-to*, #entry.submit-details _ (*#entry.short-name*)]
               } else if entry.submit-type == "conference" {
                 let details = if entry.at("submit-details", default: "") != "" { [, #entry.submit-details] }
-                let doi = if entry.at("doi", default: "") != "" { [. DOI: #link("https://doi.org/" + entry.doi)[#entry.doi]] }
-                [_*[C]* #entry.submit-to _ (*#entry.short-name*)#details#doi]
+                [_*[C]* #entry.submit-to#details~_(*#entry.short-name*)]
               } else {
                 ""
               }
